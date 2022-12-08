@@ -1,0 +1,32 @@
+/*Header*/
+@media (min-width: 993px) /* Desktop */
+{
+    .flexBetween
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 992px) /* Tablette */
+{
+    .flexBetween
+    { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+
+@media (max-width: 768px) /* Mobile */
+{
+    .flexBetween
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

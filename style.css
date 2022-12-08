@@ -1,0 +1,32 @@
+/* Disposition de la page */
+@import url(assets/css/typeface.css);
+
+/* Filtres + button filtre */
+@import url(assets/css/filtres.css); 
+
+/* Lien de navigation */
+@import url(assets/css/navigation.css); 
+
+/* Barre de recherche + button Rechercher */
+@import url(assets/css/searchbar.css);
+
+/* Titre + soustritre de la page */
+@import url(assets/css/titre.css);
+
+/* Position du logo + position de la navigation */
+@import url(assets/css/header.css);
+
+/* Petit i d'information */
+@import url(assets/css/informations.css);
+
+/* Hébergements à marseille */
+@import url(assets/css/sectionhost.css);
+
+/* Les plus populaire */
+@import url(assets/css/sectionpopular.css);
+
+/* Activités à Marseille */
+@import url(assets/css/Activity.css);
+
+/* Footer */
+@import url(assets/css/footer.css);

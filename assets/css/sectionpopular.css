@@ -1,0 +1,115 @@
+.HostPopular
+{
+    display: grid;
+    row-gap: 2rem;
+    grid-template-rows: auto repeat(3, 1fr);
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.HostPopularTitle
+{
+    margin: 0;
+    justify-content:space-between;
+}
+
+.HostPopularBox
+{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+}
+.HostPopularBox a, .HostPopularBox a:visited
+{
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.HostPopularImg
+{
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.HostPopularImg img
+{
+    border-style: none;
+}
+
+.HostPopularBoxImg
+{
+    position: relative;
+    min-height: 100%;
+    width: 40%;
+    min-width: 40%;
+    max-width: 40%;
+}
+
+.HostPopularTextBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.HostPopularText h3
+{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.HostPopularRate
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (max-width: 992px) /*Tablette*/
+{
+    .Hosting
+    {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    .HostPopularTitle
+    {
+        grid-column: 1/-1;
+    }
+    .HostPopular
+    {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        column-gap: 2rem;
+        grid-row-start: 2;
+    }
+}
+
+
+@media (max-width: 768px) /* Mobile */
+{
+    .Hosting
+    {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    .HostPopularTitle
+    {
+        grid-column: 1/-1;
+    }
+    .HostPopular
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto 10rem 10rem 10rem;
+        grid-row-start: 1;
+        border-radius: 0;
+    }
+    .HostPopularTextBox
+    {
+        flex-direction: column;
+    }
+}

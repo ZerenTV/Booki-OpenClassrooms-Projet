@@ -1,0 +1,17 @@
+@media(min-width: 993px) /*Desktop*/
+{
+    /*Titre + soustitre*/
+    .TitreSoustitre h1
+    {
+        font-size: 22px;
+        color: black;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .TitreSoustitre
+    {
+        padding: 0 20px;
+    }
+}

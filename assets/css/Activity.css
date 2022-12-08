@@ -1,0 +1,80 @@
+.Activity
+{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 30rem;
+    display: grid;
+    column-gap: 2rem;
+    margin: 4rem 0;
+}
+
+.ActivityTitle
+{
+    grid-column: 1/-1;
+}
+.ActivityTitle h2
+{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ActivityCard
+{
+    box-shadow: 0 0 15px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.1s;
+    text-decoration: none;
+    color: inherit;
+}
+.ActivityCard:hover, .ActivityCard:focus
+{
+    transform: scale(1.05);
+}
+
+.ActivityCardBoxImg
+{
+    position: relative;
+    flex: 1;
+}
+
+.ActivityCardImg
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.ActivityCardImg img
+{
+    border-style: none;
+}
+
+.ActivityCardTitle
+{
+    margin: 1.2rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) /*Tablette*/
+{
+    .Activity
+    {
+        grid-template-rows: auto 20rem;
+    }
+}
+
+@media (max-width: 768px) /*Mobile*/
+{
+    .Activity
+    {
+        padding: 0 20px;
+        row-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 15rem 15rem 15rem 15rem;
+        margin: 0;
+    }
+}

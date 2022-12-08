@@ -1,0 +1,56 @@
+.Footer
+{
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.FooterBox
+{
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.FooterCard
+{
+    width: 40%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.FooterCard a, .FooterCard a:visited
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+.FooterCardTitle h3
+{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.FooterCardLink
+{
+    display: block;
+    margin: 1rem 0;
+}
+.FooterCardLink:hover, .FooterCardLink:focus
+{
+    text-decoration: underline;
+}
+
+@media(max-width: 768px) /* Mobile */
+{
+    .FooterBox
+    {
+        padding: 0;
+        flex-direction: column;
+    }
+}

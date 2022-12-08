@@ -1,0 +1,54 @@
+/*Filtres*/
+.filterbox, .FilterAlign
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.filter
+{
+    font-weight: bold;
+}
+
+.SpanFilter
+{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.iconfilter
+{
+    color: blue;
+    margin: 0px 6px 0px 0px;
+    font-size: 1.2rem;
+}
+
+.borderfilter
+{
+    font-weight: bold;
+    padding: 14px 20px 14px 20px;
+    border: 2px solid rgba(217, 217, 217, 1);
+    border-radius: 25px;
+}
+
+.borderfilter:hover, .borderfilter:focus
+{
+    background-color: rgba(70, 159, 233, 0.205);
+}
+
+.filter a, .filter a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+
+@media(max-width: 768px) /* Mobile */
+{
+    .filterbox
+    {
+        padding: 0 20px;
+    }
+}
